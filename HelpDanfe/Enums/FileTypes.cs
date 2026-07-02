@@ -2,7 +2,7 @@
 
 public enum FileTypes
 {
-    Pdf,
-    Xml,
-    unknown
+	Pdf,
+	Xml,
+	unknown
 }
