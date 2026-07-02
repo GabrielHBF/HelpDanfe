@@ -83,7 +83,7 @@ public class ExtratorService : IExtratorService
 			TaxCalculation = new TaxCalculationEntity { TaxId = Guid.NewGuid() },
 			SendingCompany = new SendingCompanyEntity { Id = Guid.NewGuid() },
 			ReceivingCompany = new RecipientCompanyEntity { Id = Guid.NewGuid() },
-			ServicesOrProducts = []
+			ServicesOrProducts = new List<ServicesOrProducts>()
 		};
 	}
 }
