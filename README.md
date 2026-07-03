@@ -1,7 +1,7 @@
 # 📄 HelpDanfe
 ![NuGet Version](https://img.shields.io/nuget/v/HelpDanfe?style=flat-square&color=0078D4)
 ![NuGet Downloads](https://img.shields.io/nuget/dt/HelpDanfe?style=flat-square&color=00d860)
-![.NET Version](https://img.shields.io/badge/.NET-8.0%2B-512BD4?style=flat-square&logo=dotnet)
+![.NET Version](https://img.shields.io/badge/.NET-10.0%2B-512BD4?style=flat-square&logo=dotnet)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 
 **HelpDanfe** é uma biblioteca .NET leve, moderna e de alto desempenho para leitura e extração de dados de Documentos Auxiliares da Nota Fiscal Eletrônica (DANFE). 
