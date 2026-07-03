@@ -8,6 +8,14 @@
 		<Version>1.0.1</Version>
 		<Authors>AsAFerreira</Authors>
 		<Description>Biblioteca para auxílio e manipulação de DANFE em projetos .NET.</Description>
+
+		<RepositoryUrl>https://github.com/GabrielHBF/HelpDanfe</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageProjectUrl>https://www.nuget.org/packages/HelpDanfe</PackageProjectUrl>
+
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+
+		<PackageIcon>icon.png</PackageIcon>
 	</PropertyGroup>
 
 	<ItemGroup>
