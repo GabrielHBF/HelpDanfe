@@ -124,10 +124,18 @@ public class ImportacaoNotaService
 
     public async Task ProcessarArquivoAsync(Stream arquivoStream, FileTypes tipoArquivo)
     {
-        // A mesma interface processa tanto XML quanto PDF de acordo com o enum passado
-        var danfe = await _extratorService.ExtrairDadosAsync(arquivoStream, tipoArquivo);
+        var danfePdf = await _extratorService.ExtractDanfePdfAsync(arquivoStream, tipoArquivo);
+		var danfeXml = await _extratorService.ExtractDanfeXmlAsync(arquivoStream, tipoArquivo);
+		
+        if (danfePdf != null)
+        {
+            Console.WriteLine($"Nota Nº: {danfe.Numero} - Série: {danfe.Serie}");
+            Console.WriteLine($"Chave: {danfe.ChaveAcesso}");
+            Console.WriteLine($"Emitente: {danfe.Emitente.RazaoSocial}");
+            Console.WriteLine($"Total da Nota: {danfe.Impostos.ValorTotalNota:C}");
+        }
 
-        if (danfe != null)
+		if (danfeXml != null)
         {
             Console.WriteLine($"Nota Nº: {danfe.Numero} - Série: {danfe.Serie}");
             Console.WriteLine($"Chave: {danfe.ChaveAcesso}");
